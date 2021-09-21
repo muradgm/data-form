@@ -16,21 +16,29 @@ body {
 
 .header h2 {
  color: #fff;
- padding-top: 15px;
  padding-left: 30px;
+ padding-top: 15px;
 }
+
+fieldset {
+  padding:2rem
+}
+
+legend {
+  background-color: #fff;
+  font-weight: bold;
+  padding-inline: 10px;
+  color: purple;
+}
+
 
 /* PERSONAL DATA SECTION */
 .personal-data {
- margin: 3rem 2rem 0 4rem;
- width: 45%;
- border: 3px solid #333;
- display: inline-block;
- vertical-align: top;
+ margin: 3rem 2rem 0 rem;
 }
 
 .address-form {
- width: 95%;
+ width: 100%;
  margin: 2rem auto;
 }
 
@@ -60,15 +68,8 @@ textarea {
 }
 
 /* PRODUCTS SECTION */
-.products {
- margin: 3rem 2rem 0 2rem;
- width: 45%;
- border: 3px solid #333;
- display: inline-block;
-}
-
 .products-form {
- width: 95%;
+ width: 100%;
  margin: 2rem auto;
 }
 
@@ -79,8 +80,7 @@ input[type="radio"] {
 
 button {
  background-color: #59eb0a;
- width: 200px;
- height: 50px;
+ 
  color: #fff;
  font-size: 1.125rem;
  border-radius: 10px;
@@ -119,3 +119,85 @@ span {
  padding: 0 0.5rem;
 
 }
+
+
+@media only screen and (min-width: 1025px) {
+  .personal-data {
+   margin: 3rem 2rem 0 5rem;
+   width: 45%;
+   display: inline-block;
+   vertical-align: top;
+  }
+
+  .products {
+   margin: 3rem auto;
+   width: 45%;
+   display: inline-block;
+  }
+
+  button {
+   width: 200px;
+   height: 50px;
+   position: relative;
+   bottom: 0;
+  }
+}
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media only screen and (max-width: 1024px) {
+ .header h2 {
+  padding-top: 1rem;
+ }
+
+ .personal-data {
+ margin: 3rem 2rem 0 2rem;
+ width: 45%;
+ display: inline-block;
+ vertical-align: top;
+ }
+
+ .products {
+ margin: 3rem auto;
+ width: 45%;
+ display: inline-block;
+ }
+
+ button {
+width: 200px;
+height: 50px;
+  position: relative;
+  bottom: 0;
+ }
+
+}
+
+/* MEDIA QUERY */
+@media only screen and (max-width: 768px) {
+ .header h2 {
+  padding-top: .5rem;
+ }
+
+ .personal-data {
+  margin: 3rem auto;
+  width: 90%;
+  display: block;
+ }
+
+ .products {
+  margin: 3rem auto 10rem auto;
+  width: 90%;
+  display: block;
+ }
+
+ button {
+  width: 100%;
+  height: 10vh;
+  border: none;
+  position: relative;
+  bottom: 0;
+ }
+
+}
+
+

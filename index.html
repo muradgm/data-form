@@ -5,6 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="mobile.css" />
 		<title>Data Form</title>
 	</head>
 	<body>
@@ -14,109 +15,115 @@
 		<div class="wrapper">
 			<!-- PERSONAL DATA SECTION -->
 			<section class="section personal-data">
-				<span><h3>Personal Data</h3></span>
 				<form action="" class="address-form">
-					<label for="first name">First Name:</label><br />
-					<input
-						type="text"
-						name="first name"
-						id="fname"
-						placeholder="First Name"
-					/><br />
+					<fieldset>
+						<legend>Personal Data</legend>
 
-					<label for="last name">Last Name:</label><br />
-					<input
-						type="text"
-						name="last name"
-						id="lname"
-						placeholder="Last Name"
-					/><br />
+						<label for="first name">First Name:</label><br />
+						<input
+							type="text"
+							name="first name"
+							id="fname"
+							placeholder="First Name"
+						/><br />
 
-					<label for="street">Street:</label><br />
-					<input
-						type="text"
-						name="street"
-						id="street"
-						placeholder="Street"
-					/><br />
+						<label for="last name">Last Name:</label><br />
+						<input
+							type="text"
+							name="last name"
+							id="lname"
+							placeholder="Last Name"
+						/><br />
 
-					<label for="zipcode">Zipcode:</label><br />
-					<input
-						type="text"
-						name="yipcode"
-						id="zipCode"
-						placeholder="12345"
-					/><br />
+						<label for="street">Street:</label><br />
+						<input
+							type="text"
+							name="street"
+							id="street"
+							placeholder="Street"
+						/><br />
 
-					<label for="city">City:</label><br />
-					<input
-						type="text"
-						name="city"
-						id="fname"
-						placeholder="Berlin"
-					/><br />
+						<label for="zipcode">Zipcode:</label><br />
+						<input
+							type="text"
+							name="yipcode"
+							id="zipCode"
+							placeholder="12345"
+						/><br />
 
-					<label for="phone number">Phone Number:</label><br />
-					<input
-						type="tel"
-						name="phone number"
-						id="tel"
-						placeholder="0123 456 789"
-					/><br />
+						<label for="city">City:</label><br />
+						<input
+							type="text"
+							name="city"
+							id="fname"
+							placeholder="Berlin"
+						/><br />
 
-					<label for="Email">Email:</label><br />
-					<input
-						type="email"
-						name="email"
-						id="email"
-						placeholder="myemail@site.com"
-					/><br />
+						<label for="phone number">Phone Number:</label><br />
+						<input
+							type="tel"
+							name="phone number"
+							id="tel"
+							placeholder="0123 456 789"
+						/><br />
 
-					<label for="Email">Comments:</label><br />
-					<textarea
-						name="textarea"
-						id="textare"
-						cols="30"
-						rows="10"
-						placeholder="Tell us more about colors, etc."
-					></textarea
-					><br />
+						<label for="Email">Email:</label><br />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="myemail@site.com"
+						/><br />
+
+						<label for="Email">Comments:</label><br />
+						<textarea
+							name="textarea"
+							id="textare"
+							cols="30"
+							rows="10"
+							placeholder="Tell us more about colors, etc."
+						></textarea
+						><br />
+					</fieldset>
 				</form>
 			</section>
 
 			<!-- PRODUCTS SECTION -->
 			<section class="section products">
 				<div class="form-wrapper">
-					<span><h3>Products</h3></span>
 					<form action="" class="products-form">
-						<label for="web-design">Web Design:</label><br />
-						<input type="radio" name="web-design" id="individual" />
-						<label for="individual">Individual</label>
-						<input type="radio" name="web-design" id="template" />
-						<label for="template">Template</label>
-						<br />
-						<br />
-						<label for="web-development">Web Development:</label><br />
-						<input type="checkbox" name="web-development" id="html" />
-						<label for="individual">HTML & CSS</label><br />
-						<input type="checkbox" name="web-development" id="js" />
-						<label for="template">JavaScript</label><br />
-						<input type="checkbox" name="web-development" id="mongo" />
-						<label for="template">MongoDB</label>
-						<br />
-						<br />
-						<label for="project start date">Project Start Date:</label><br />
-						<input type="date" name="start date" id="sDate" />
-						<br />
-						<label for="project end date">Project End Date:</label><br />
-						<input type="date" name="end date" id="eDate" />
-						<br />
-						<label for="Category">Category:</label><br />
-						<select name="category" id="category">
-							<option value="personal">Personal</option>
-							<option value="student">Student</option>
-							<option value="companies">Companies</option>
-						</select>
+						<fieldset>
+							<legend>Products</legend>
+
+							<label for="web-design">Web Design:</label><br />
+							<input type="radio" name="web-design" id="individual" />
+							<label for="individual">Individual</label>
+							<input type="radio" name="web-design" id="template" />
+							<label for="template">Template</label>
+							<br />
+							<br />
+							<label for="web-development">Web Development:</label><br />
+							<input type="checkbox" name="web-development" id="html" />
+							<label for="individual">HTML & CSS</label><br />
+							<input type="checkbox" name="web-development" id="js" />
+							<label for="template">JavaScript</label><br />
+							<input type="checkbox" name="web-development" id="mongo" />
+							<label for="template">MongoDB</label>
+							<br />
+							<br />
+							<label for="project start date">Project Start Date:</label><br />
+							<input type="date" name="start date" id="sDate" />
+							<br />
+							<label for="project end date">Project End Date:</label><br />
+							<input type="date" name="end date" id="eDate" />
+							<br />
+							<label for="Category">Category:</label><br />
+							<select name="category" id="category">
+								<option value="personal">Personal</option>
+								<option value="student">Student</option>
+								<option value="companies">Companies</option>
+							</select>
+						</fieldset>
 					</form>
 				</div>
 				<button type="submit" id="submit">Order our Service</button>
